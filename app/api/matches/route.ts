@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {people} from '@/lib/data';export async function GET(){return NextResponse.json({mode:process.env.NEXT_PUBLIC_SUPABASE_URL?'cloud-ready':'demo',people})}

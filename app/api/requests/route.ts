@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';export async function POST(r:Request){const b=await r.json();if(!b.personId)return NextResponse.json({error:'personId is required'},{status:400});return NextResponse.json({ok:true,id:crypto.randomUUID(),status:'pending'})}
