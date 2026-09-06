@@ -1,0 +1,1 @@
+export default function NotFound() { return <main className="min-h-screen bg-ink px-5 py-24 text-center text-white"><h1 className="font-display text-4xl font-bold">Profile not found</h1><p className="mt-3 text-white/60">This member may have removed their profile or changed their username.</p></main>; }

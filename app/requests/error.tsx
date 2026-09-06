@@ -1,0 +1,2 @@
+'use client';
+export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <main className="min-h-screen bg-ink px-5 py-20 text-center text-white"><h1 className="font-display text-3xl font-bold">Requests could not load</h1><p className="mt-3 text-white/60">Your data is safe. Try loading this page again.</p><button onClick={reset} className="mt-6 rounded-full bg-mint px-5 py-3 font-semibold text-ink">Try again</button></main>; }
